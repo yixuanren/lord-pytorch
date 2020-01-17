@@ -27,7 +27,7 @@ Training a model for disentanglement requires several steps.
 Preprocessing a local copy of one of the supported datasets can be done as follows:
 ```
 lord.py --base-dir <output-root-dir> preprocess
-    --dataset-id {mnist,smallnorb,cars3d,shapes3d,celeba,kth,rafd,edges2shoes}
+    --dataset-id {mnist,smallnorb,cars3d,shapes3d,celeba,kth,rafd}
     --dataset-path <input-dataset-path>
     --data-name <output-data-filename>
 ```
