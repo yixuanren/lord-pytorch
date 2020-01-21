@@ -1,5 +1,5 @@
 # LORD
-Pytorch re-implementation of the method described in the paper: [Demystifying Inter-Class Disentanglement](http://www.vision.huji.ac.il/lord) by Aviv Gabbay and Yedid Hoshen.
+Pytorch re-implementation (thanks to [@dneuhof](https://github.com/dneuhof)) of the method described in the paper: [Demystifying Inter-Class Disentanglement](http://www.vision.huji.ac.il/lord) by Aviv Gabbay and Yedid Hoshen.
 [[Official tensorflow implementation](https://github.com/avivga/lord)]
 
 ## Content transfer between classes
