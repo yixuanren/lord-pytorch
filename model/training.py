@@ -8,10 +8,13 @@ import torch
 from torch.optim import Adam
 from torch.optim.lr_scheduler import CosineAnnealingLR
 from torch.utils.data import TensorDataset, DataLoader
-from torch.utils.tensorboard import SummaryWriter
+#from torch.utils.tensorboard import SummaryWriter
+from tensorboardX import SummaryWriter
 
 from model.modules import LordModel, VGGDistance
 from model.utils import AverageMeter
+
+from pdb import set_trace
 
 
 class Lord:

@@ -3,6 +3,8 @@ import torch.nn.functional as F
 from torch import nn
 from torchvision import models
 
+from pdb import set_trace
+
 
 class LordModel(nn.Module):
 
@@ -194,6 +196,11 @@ class VGGDistance(nn.Module):
 
 	def forward(self, I1, I2):
 		b_sz = I1.size(0)
+		
+		if I1.size(1) == 1:
+			I1 = I1.repeat(1, 3, 1, 1)
+			I2 = I2.repeat(1, 3, 1, 1)
+		
 		f1 = self.vgg(I1)
 		f2 = self.vgg(I2)
 

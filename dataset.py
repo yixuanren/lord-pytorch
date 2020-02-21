@@ -62,7 +62,7 @@ class SmallNorb(DataSet):
 		class_ids = []
 		content_ids = []
 
-		regex = re.compile('azimuth(\d+)_elevation(\d+)_lighting(\d+)_(\w+).jpg')
+		regex = re.compile('azimuth(\d+)_elevation(\d+)_lighting(\d+)_(\w+).png')
 		for category in os.listdir(self._base_dir):
 			for instance in os.listdir(os.path.join(self._base_dir, category)):
 				for file_name in os.listdir(os.path.join(self._base_dir, category, instance)):
